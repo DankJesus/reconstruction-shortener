@@ -3,7 +3,7 @@ function generateTinyUrl(link) {
         $("#result").val(newUrl)
         localStorage.setItem('link', document.getElementById("result").value);
 
-        window.open(document.getElementById('result').value, '_blank')
+        // window.open(document.getElementById('result').value, '_blank')
 
     });
 }
