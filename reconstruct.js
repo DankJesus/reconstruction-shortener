@@ -15,13 +15,16 @@ function generateLink(puzzle, scramble, moves) {
 
 function generate() {
     var puzzle = $("#puzzle").find(":selected").val();
-    var scramble = $("#scramble").val().replace(/ /g, '_').replace(/'/g, '-');
-    var moves = $("#moves").val().replace(/ /g, '_').replace(/'/g, '-');
+    var scramble = $("#scramble").val().replace(/ /g, '_').replace(/'/g, '-')
+    var moves = $("#moves").val().replace(/ /g, '_').replace(/'/g, '-').replace(/\n/g, '%0A')
 
     generateLink(puzzle, scramble, moves);
     localStorage.setItem('puzzle', document.getElementById("puzzle").value);
     localStorage.setItem('scramble', document.getElementById("scramble").value);
     localStorage.setItem('moves', document.getElementById("moves").value);
+    $("#result").select()
+    document.execCommand('copy');
+
 }
 
 window.onload = function () {

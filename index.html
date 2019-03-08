@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <html>
 
 <head>
@@ -18,14 +18,14 @@
         <option value="7x7x7">7x7</option>
     </select>
     <br>
-    <textarea id="scramble" rows="1" cols="100" placeholder="Scramble" style="resize:none"></textarea>
- 
+    <textarea id="scramble" rows="1" cols="70" placeholder="Scramble" style="resize:none"></textarea>
+
     <br>
-    <textarea id="moves" rows="7" cols="50" placeholder="Moves" style="resize:none"></textarea>    
+    <textarea id="moves" rows="20" cols="50" placeholder="Moves" style="resize:none"></textarea>
     <br>
-   <button onclick="generate()"> Generate </button>
-    <input type="text" id="result"></input>
+    <button onclick="generate()"> Generate </button>
+    <textarea rows="1" cols="30" readonly id="result" style="resize: none"> </textarea>
 </body>
-    <script src="reconstruct.js"> </script>
+<script src="reconstruct.js"> </script>
 
 </html>
