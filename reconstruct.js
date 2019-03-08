@@ -1,5 +1,5 @@
 function generateTinyUrl(link) {
-    $.get(`http://tinyurl.com/api-create.php?url=${link}`, function (newUrl) {
+    $.get(`https://tinyurl.com/api-create.php?url=${link}`, function (newUrl) {
         return newUrl;
     });
 }
