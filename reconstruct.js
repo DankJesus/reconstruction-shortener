@@ -3,7 +3,8 @@ function generateTinyUrl(link) {
     $.get(`https://cors.io/?http://tinyurl.com/api-create.php?url=${link}`, function (newUrl) {
         $("#result").val(newUrl)
         $("#result").select()
-        document.execCommand('copy')
+        // document.execCommand('copy')
+        window.open(newUrl,'_blank')
     });
 }
 
